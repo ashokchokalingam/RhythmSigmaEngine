@@ -27,22 +27,13 @@ Ensure the following requirements are met before running the script:
 
 ## Installation Steps
 
-### Step 1: Clone the Repository
+###  Run the Script
 
 bash
 
 Copy code
 
-`git clone <repository-url>
-cd <repository-directory>` 
-
-### Step 2: Run the Script
-
-bash
-
-Copy code
-
-`sudo bash setup_script.sh` 
+`chmod +x RhythmSigmaEngine.sh` 
 
 The script will guide you through all configurations.
 
@@ -100,46 +91,6 @@ The script will guide you through all configurations.
 -   **Service Creation**: Creates a `systemd` service to run the log rotation and processing script continuously.
 -   **Automatic Restart**: The service automatically restarts in case of failure.
 
-----------
-
-## Usage
-
-### Start the Service
-
-bash
-
-Copy code
-
-`sudo systemctl start log_rotation.service` 
-
-### Stop the Service
-
-bash
-
-Copy code
-
-`sudo systemctl stop log_rotation.service` 
-
-### Check Service Status
-
-bash
-
-Copy code
-
-`sudo systemctl status log_rotation.service` 
-
-----------
-
-## File Structure
-
-### Configuration Files
-
--   **Logstash Configuration**:  
-    `/etc/logstash/conf.d/logstash.conf`
--   **Selected Rules File**:  
-    `/usr/local/bin/rules_selection.conf`
--   **Rsyslog Configuration**:  
-    `/etc/rsyslog.d/zircolite.conf`
 
 ----------
 
