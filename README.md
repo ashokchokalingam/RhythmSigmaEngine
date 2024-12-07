@@ -148,6 +148,7 @@ The script will guide you through all configurations.
 
 ![image](https://github.com/user-attachments/assets/18f33df9-dd87-4905-8621-80e10528c68f)
 
+![image](https://github.com/user-attachments/assets/f2305fd7-5e79-4b20-a402-7044100bc95c)
 
 
 
