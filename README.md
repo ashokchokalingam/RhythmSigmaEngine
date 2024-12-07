@@ -59,7 +59,9 @@ The script will guide you through all configurations.
 
 ----------
 
-This script integrates **[Zircolite](https://github.com/wagga40/Zircolite)**, a lightweight and fast standalone tool to detect malicious activities in EVTX or XML logs using Sigma rules. Zircolite was created and is actively maintained by **@wagga40**.
+## About Zircolite
+
+ **[Zircolite](https://github.com/wagga40/Zircolite)**, a lightweight and fast standalone tool to detect malicious activities in EVTX or XML logs using Sigma rules. Zircolite was created and is actively maintained by **@wagga40**.
 
 **Note**: Zircolite is not part of this repository. It is cloned directly from the official repository during the setup process.
 
@@ -140,6 +142,14 @@ This script integrates **[Zircolite](https://github.com/wagga40/Zircolite)**, a 
 -   Rerun the script to complete dependency installation.
 
 ----------
+### LogRhythm LDS Configuration
+
+-   The Non- Syslog log sources Configuration for LDS
+
+![image](https://github.com/user-attachments/assets/18f33df9-dd87-4905-8621-80e10528c68f)
+
+
+
 
 ## Contribution
 
