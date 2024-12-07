@@ -59,6 +59,10 @@ The script will guide you through all configurations.
 
 ----------
 
+This script integrates **[Zircolite](https://github.com/wagga40/Zircolite)**, a lightweight and fast standalone tool to detect malicious activities in EVTX or XML logs using Sigma rules. Zircolite was created and is actively maintained by **@wagga40**.
+
+**Note**: Zircolite is not part of this repository. It is cloned directly from the official repository during the setup process.
+
 ### Zircolite Setup
 
 -   **Repository Clone**: Clones the Zircolite repository from GitHub.
