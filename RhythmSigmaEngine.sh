@@ -227,8 +227,14 @@ rotate_and_process_log() {
 
     rm -f /tmp/output_*.json "$PARALLELS_DIR/$SPLIT_PREFIX"*.xml
 
-    # Retain only files in $OUTPUT_DIR for the last 24 hours
-    find "$OUTPUT_DIR" -type f -mmin +1440 -exec rm -f {} \;
+    # Retain only the last 7 files in $OUTPUT_DIR
+    ls -tp "$OUTPUT_DIR" | grep -v '/$' | tail -n +8 | xargs -I {} rm -f "$OUTPUT_DIR/{}"
+
+    # Retain only the last 7 files in $ARCHIVE_DIR
+    ls -tp "$ARCHIVE_DIR" | grep -v '/$' | tail -n +8 | xargs -I {} rm -f "$ARCHIVE_DIR/{}"
+
+    # Retain only the last 7 files in $EMPTY_OUTPUT_DIR
+    ls -tp "$EMPTY_OUTPUT_DIR" | grep -v '/$' | tail -n +8 | xargs -I {} rm -f "$EMPTY_OUTPUT_DIR/{}"
 }
 
 while true; do
